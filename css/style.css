@@ -5,15 +5,31 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------- */
 nav{
     height: 100px;
     background: #fff;
+    line-height: 30px;
 }
 
 .fl{
     margin-top: 35px;
     float: left;
     margin-left: 30px;
+}
+
+.fl div{
+    float: left;
+    line-height: 30px;
 }
 
 .fr{
@@ -78,7 +94,6 @@ button{
 
 .image img{
     width: 1000px;
-
 }
 
 .paragraph{
@@ -88,6 +103,14 @@ button{
     line-height: 25px;
     margin-top: 50px;
     font-size: 18px;
+}
+
+.paragraph p{
+    margin-bottom: 40px;
+}
+
+.paragraph i{
+    font-size: 40px;
 }
 
 .paragraph button{
@@ -106,8 +129,11 @@ button{
     width: 50px;
     height: 20px;
     border-radius: 100%;
-    margin-left: 40px;
     margin-top: 70px;
+}
+
+.business label{
+    font-size: 19px;
 }
 
 .box{
@@ -236,7 +262,7 @@ h4{
 }
 
 .container{
-    width: 1500px;
+    width: 1300px;
     height: 700px;
     margin: 0 auto;
     margin-top: 200px;
@@ -250,7 +276,7 @@ h4{
 
 .container img{
     float: left;
-    width: 750px;
+    width: 550px;
 }
 
 .text{
@@ -331,7 +357,6 @@ h4{
 
 .container-3{
     width: 1900px;
-    background:coral;
     position: relative;
     margin-top: 50px;
 }
@@ -344,9 +369,12 @@ h4{
 
 .float-2{
     width: 600px;
-    height: 500px;
     background: blue;
     float: left;
+}
+
+.float-2 img, .float-3 img{
+    filter: invert(100%);
 }
 
 .float-2::after{
@@ -365,9 +393,7 @@ h4{
 
 .inner-float img{
     width: 190px;
-    margin: 75px 30px;
-    
-
+    margin: 90px 45px;
 }
 
 .inner-float-2{
@@ -379,8 +405,7 @@ h4{
 
 .inner-float-2 img{
     width: 160px;
-    margin: 65px 70px;
-
+    margin: 70px 80px;
 }
 
 .inner-float-3{
@@ -403,7 +428,7 @@ h4{
 
 .inner-float-4 img{
     width: 150px;
-    margin:  80px 70px;
+    margin:  80px 75px;
 }
 
 .centered{
@@ -417,7 +442,8 @@ h4{
 
 .centered img{
     width: 160px;
-    margin: 50px 60px
+    margin: 50px 60px;
+    filter: invert(0%);
 }
 
 .centered .border{
@@ -434,7 +460,6 @@ h4{
 
 .float-3{
     width: 600px;
-    height: 500px;
     background: blue;
     position: absolute;
     top: 0;
@@ -449,7 +474,7 @@ h4{
 
 .inner-float-5 img{
     width: 200px;
-    margin: 70px 50px;
+    margin: 90px 50px;
     float: left;
 }
 
@@ -464,7 +489,7 @@ h4{
 
 .inner-float-6 img{
     width: 200px;
-    margin: 100px 50px;
+    margin: 120px 50px;
 }
 
 .inner-float-7{
@@ -481,7 +506,7 @@ h4{
 .inner-float-8{
     width: 300px;
     height: 250px; 
-    background: yellow;
+    background: rgb(231, 231, 18);
     position: absolute;
     top: 250px;
     right: 0;
@@ -546,7 +571,8 @@ h4{
 
 footer{
     height: 600px;
-    background: #000;  
+    background: #000; 
+    position: relative; 
 }
 
 .list{
@@ -576,10 +602,10 @@ footer .border{
     height: 2px;
 }
 
-
-
-
-
-
-
-
+.italy{
+    height: 30px;
+    color: gray;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+}
